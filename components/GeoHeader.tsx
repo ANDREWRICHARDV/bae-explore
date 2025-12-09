@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Menu, Trophy } from 'lucide-react';
+import { APP_LOGO } from '../constants';
 
 interface GeoHeaderProps {
   points: number;
@@ -11,7 +12,7 @@ export const GeoHeader: React.FC<GeoHeaderProps> = ({ points }) => {
     <header className="bg-white dark:bg-[#0B1120] px-4 md:px-8 py-4 flex items-center justify-between border-b border-gray-100 dark:border-[#2A3241] sticky top-0 z-50 transition-colors">
       <div className="flex items-center gap-2">
         <img 
-            src="https://bae-ai-landing-page.vercel.app/assets/bae-logo-BFKDPxMm.png" 
+            src={APP_LOGO}
             alt="BAE AI" 
             className="h-10 w-auto object-contain" 
         />

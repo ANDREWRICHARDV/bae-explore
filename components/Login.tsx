@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Mail, ArrowRight } from 'lucide-react';
+import { APP_LOGO } from '../constants';
 
 interface LoginProps {
   onLogin: () => void;
@@ -24,7 +25,7 @@ export const Login: React.FC<LoginProps> = ({ onLogin, onNotify }) => {
         {/* Logo */}
         <div className="flex justify-center mb-8">
            <img 
-            src="https://bae-ai-landing-page.vercel.app/assets/bae-logo-BFKDPxMm.png" 
+            src={APP_LOGO}
             alt="BAE AI" 
             className="h-16 w-auto object-contain" 
            />

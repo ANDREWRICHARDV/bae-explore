@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Send, Search } from 'lucide-react';
+import { APP_LOGO } from '../constants';
 
 interface HomeLandingProps {
   onNotify: (msg: string) => void;
@@ -14,7 +15,7 @@ export const HomeLanding: React.FC<HomeLandingProps> = ({ onNotify }) => {
       <div className="mb-8 relative group">
         <div className="absolute inset-0 bg-blue-500/10 rounded-full blur-3xl transform group-hover:scale-110 transition-transform duration-700"></div>
         <img 
-          src="https://bae-ai-landing-page.vercel.app/assets/bae-logo-BFKDPxMm.png" 
+          src={APP_LOGO} 
           alt="BAE Logo" 
           className="w-32 h-32 md:w-40 md:h-40 object-contain relative z-10 drop-shadow-2xl"
         />

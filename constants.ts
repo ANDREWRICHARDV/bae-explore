@@ -1,6 +1,8 @@
 
 import { Deal, RestaurantInfo, FlashProduct, RelatedItem, GeoReward, FeedDeal, TrendingHashtag, UserProfile, DropItem } from './types';
 
+export const APP_LOGO = "https://bae-ai-landing-page.vercel.app/assets/bae-logo-BFKDPxMm.png";
+
 export const RESTAURANT_INFO: RestaurantInfo = {
   name: "Borcelle Restaurant",
   rating: 4.8,
